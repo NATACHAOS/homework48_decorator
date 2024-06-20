@@ -6,9 +6,9 @@ def is_prime(func):
         k = 0
         gen_result = sum(args)
         for i in range(2, gen_result // 2 + 1):
-            if (gen_result % i == 0):
+            if gen_result % i == 0:
                 k = k + 1
-        if (k <= 0):
+        if k <= 0:
             print("Число простое")
         else:
             print("Число не является простым")
